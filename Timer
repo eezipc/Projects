@@ -1,3 +1,5 @@
+# Code taken from Python Coding @clcoding
+
 import time
 from plyer import notification
 
