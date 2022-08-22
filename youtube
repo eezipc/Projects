@@ -1,1 +1,13 @@
 # Code taken from Python Coding @clcoding
+
+# import pytube library
+import pytube
+
+# Request the user to enter the youtube link
+url = input ("Enter the youtube url: ")
+
+# The path to where the file should be saved
+path="C:\Alan"
+
+# Python code to download the video using pytube. It gets the highest resolution and saves to the path above.
+pytube.YouTube(url).streams.get_highest_resolution().download(path)
