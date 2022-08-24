@@ -1,0 +1,53 @@
+# Import Random
+import random
+
+# Import OS
+import os
+
+# Import re
+import re
+
+#Instructions to clear the screen
+os.system('cls' if os.name=='nt' else 'clear')
+
+# Begin the while loop
+while (1 < 2):
+    print("\n")
+    print("Rock, Paper, Scissors..... GO!   ")
+
+    # Ask the user to choose Rock Paper or Scissors
+    userchoice = input("Choose Rock, Paper or Scissors: ")
+
+    if not re.match("[SsRrPp]", userchoice):
+        print("Please choose either R, S or P")
+        continue
+
+        print("You chose: " + userchoice)
+        choices = ['R', 'P', 'S']
+        opponentchoice = random.choice(choices)
+
+        print ("I chose: " + opponentchoice)
+
+        if opponentchoice == str.upper(userchoice):
+            print("It's a draw")
+
+        elif opponentchoice == 'R' and userchoice.upper() == 'S':
+            print("Scissors beats Rock. I win")
+            continue
+
+
+        elif opponenetchoice == 'S' and userchoice.upper() == 'P':
+
+            print("Scissors beats paper! I win! ")
+
+            continue
+
+        elif opponenetchoice == 'P' and userchoice.upper() == 'R':
+
+            print("Paper beat rock, I win!")
+
+            continue
+
+        else:
+
+            print("You win!")
