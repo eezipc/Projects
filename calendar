@@ -1,0 +1,28 @@
+
+# Print out a specific calendar year
+
+# import the calendar module
+import calendar
+
+
+print("The calendar of year 2022 is : ")
+
+# Code below prints the calendar from 2022
+print(calendar.calendar(2022, 2, 1, 6))
+
+
+
+
+
+
+#Print out a calendar for any particular year from a user input
+# Import calendar package
+from calendar import*
+
+# Ask the user to enter their year of choice
+year = int(input("Enter the year:   "))
+
+# Print out that specific year
+# 2 is two characters for days, 1 is one row for each week,
+# 8 is rows for each month, 4 is the columns for each month of the year
+print(calendar(year, 2,1,8,4))
