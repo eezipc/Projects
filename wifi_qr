@@ -1,4 +1,5 @@
 ## Extract your laptop WiFi SSID and password and create a QR code.
+## https://www.geeksforgeeks.org/wi-fi-qr-code-generator-using-python/
 
 # import subprocess. It may need to be installed first.
 import subprocess
