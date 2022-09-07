@@ -1,0 +1,19 @@
+## This code stops your pc from sleeping when away from your desk.
+## The pyautogui package works on Windows, macOS and Linux.
+## Script is taken from clcoding.com
+
+# Import the pyautogui package. You may need to install it first.
+import pyautogui
+
+# Import the time library
+import time
+
+# Code to run the script.
+# When the current state is set to true
+while True:
+
+#Move the cursor 20 pixels
+    pyautogui.moveRel(0, 20)
+
+# This line puts the code to sleep for 5 seconds. After 5 seconds, it checks the state again.
+    time.sleep(5)
